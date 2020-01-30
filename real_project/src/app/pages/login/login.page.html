@@ -1,0 +1,43 @@
+  <ion-header>
+    <ion-toolbar color="danger">
+    <ion-title class = "ion-text-center">Mighty Comms </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding='true'>
+    <div class = "ion-text-center" style =" margin-top:15%;">
+      <img src="assets/image/image.png" class="smallLogo"/>
+    </div>
+
+    
+    <h1 class="ion-text-center">Sign In</h1>
+    <form>
+
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input  type="password"></ion-input>
+    </ion-item>
+
+    <ion-item lines='none'>
+      <ion-checkbox color="danger"></ion-checkbox>
+      <ion-label style="margin-left: 3%;"> Remember me ?</ion-label>
+  </ion-item>
+
+  <div style="margin-top: 3%; margin-left: 4.5%;">
+  <ion-nav-link (click)="routerToChangePassword()">forgot password</ion-nav-link>
+  </div>
+  </ion-list>
+
+  <div  style="margin-top: 5%;">
+  <ion-button (click)="login()" expand="block" share="round" color="danger">LOGIN
+  </ion-button>
+  </div>
+
+  </form>
+  </ion-content>

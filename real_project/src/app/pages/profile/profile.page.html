@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToDashboard()">
+        <ion-icon slot="icon-only" color="danger" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+    <div style="margin-left:0;margin-bottom:20px;">
+        
+    </div>
+    <ion-avatar class="ion-margin-start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        
+      </ion-avatar>
+       <ion-list-header>KI Moroke</ion-list-header>
+       
+          <ion-item>
+              <ion-label position="stacked">Email address</ion-label>
+              
+              <ion-input clearOnEdit="true" placeholder="kabelo@mightycomms.co.za"></ion-input >
+                <ion-buttons slot="end">
+                    <ion-button >
+                      <ion-icon slot="icon-only" color="danger" name="ios-create"></ion-icon>
+                    </ion-button>
+                  </ion-buttons>
+              </ion-item>
+            <ion-item>
+                <ion-label position="stacked">Phone Number</ion-label>
+                <ion-input clearOnEdit="true" placeholder="0832663529"></ion-input >
+                  <ion-buttons slot="end">
+                      <ion-button >
+                        <ion-icon slot="icon-only" color="danger" name="ios-create"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="stacked">Position</ion-label>
+                  <ion-input clearOnEdit="true" placeholder="BI"></ion-input >
+                    <ion-buttons slot="end">
+                        <ion-button >
+                          <ion-icon slot="icon-only" color="danger" name="ios-create"></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                </ion-item>
+              <ion-item style="margin-bottom: 20px;">
+                  <ion-label position="stacked">Address</ion-label>
+                  <ion-input placeholder="Address Line 1"></ion-input>
+                  
+                  <ion-input placeholder="City"></ion-input>
+                  <ion-input placeholder="State"></ion-input>
+                  <ion-input placeholder="Zip Code"></ion-input>
+                  <ion-buttons slot="end">
+                      <ion-button >
+                        <ion-icon slot="icon-only" color="danger" name="ios-create"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                </ion-item> 
+
+                <ion-button style="font-size: 1.2rem;"  color="danger" expand="full" shape="round">Save</ion-button>
+</ion-content>

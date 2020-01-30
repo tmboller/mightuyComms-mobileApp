@@ -1,0 +1,94 @@
+<ion-header >
+  <ion-toolbar color="danger" >
+
+      <ion-buttons slot="start" (click)="routeToProfile()">
+          <ion-button>
+            <ion-icon slot="icon-only" color="light" name="ios-contact"></ion-icon>
+            <ion-label >KI  Moroke</ion-label>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-buttons slot="end" (click)="routeToSettings()">
+            <ion-button>
+              <ion-icon slot="icon-only" color="light" name="more"></ion-icon>
+             
+            </ion-button>
+          </ion-buttons>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" >
+    <ion-card  style="height: 95%;" >
+      <img  src="assets/image/undraw_operating_system_4lr6.png" alt="" />
+      <ion-card-header>
+        
+        <ion-card-title>Resource Managment</ion-card-title>
+        <ion-card-subtitle><strong>Tech teams</strong></ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Resource managment mobile application is the efficient 
+            and effective development 
+            of an organization's resources when they are needed.
+            Such resources may include the inventory, human skills,
+             production resources, or information technology
+            (IT) and natural resources for  technicians.
+         </p>
+
+         
+      </ion-card-content>
+    </ion-card>
+
+    
+    <ion-card (click)="routeToTeams()" >
+   
+        <ion-item>
+          <ion-fab-button  color="danger"><ion-icon name="people" style="zoom: 1;"></ion-icon></ion-fab-button>
+            
+            <ion-card-header>
+                <ion-card-subtitle style="font-size: 1rem;" class="ion-text-capitalize"><strong>Teams</strong></ion-card-subtitle>
+                <ion-card-subtitle style="font-size:0.6rem " class="ion-text-capitalize">Team members and  specilizations</ion-card-subtitle>
+            </ion-card-header>
+        </ion-item>
+     
+    </ion-card>
+
+    <ion-card (click)="routeToTools()" >
+      <ion-item>
+          <ion-fab-button color="danger"><ion-icon name="construct" style="zoom: 1;"></ion-icon></ion-fab-button>
+        
+          <ion-card-header>
+              <ion-card-subtitle  style="font-size: 1rem;" class="ion-text-capitalize">Tools</ion-card-subtitle>
+              <ion-card-subtitle style="font-size:0.6rem " class="ion-text-capitalize">View tools, used during the day.</ion-card-subtitle>
+          </ion-card-header>
+      </ion-item>
+   
+  </ion-card>
+
+
+<ion-card  (click)="routeToScanner()">
+    <ion-item>
+        <ion-fab-button color="danger"><ion-icon name="qr-scanner" style="zoom: 1;"></ion-icon></ion-fab-button>
+       
+        <ion-card-header>
+            <ion-card-subtitle  style="font-size: 1rem;" class="ion-text-capitalize">Scan</ion-card-subtitle>
+            <ion-card-subtitle style="font-size:0.6rem " class="ion-text-capitalize">Using a QR code to scan products .</ion-card-subtitle>
+        </ion-card-header>
+    </ion-item>
+    
+  </ion-card>
+
+<ion-card (click)="routeToSales()" > 
+  <ion-item>
+      <ion-fab-button color="danger"><ion-icon name="md-pie" style="zoom: 1;"></ion-icon></ion-fab-button>
+     
+      <ion-card-header>
+          <ion-card-subtitle  style="font-size: 1rem;" class="ion-text-capitalize">Number of Sale</ion-card-subtitle>
+          <ion-card-subtitle style="font-size:0.6rem " class="ion-text-capitalize">Track number of sales every week.</ion-card-subtitle>
+      </ion-card-header>
+  </ion-item>
+
+  
+</ion-card>
+
+</ion-content>

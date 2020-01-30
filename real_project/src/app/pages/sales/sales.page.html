@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Sales & Sites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="typeSegment" color="danger" style="margin-top: 5%;">
+  
+    <ion-segment-button value="sale">
+      <ion-label>Market team</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="tech">
+      <ion-label>Sites</ion-label>
+    </ion-segment-button>
+
+
+  </ion-segment>
+  <div [ngSwitch]="typeSegment">
+    <ion-card *ngSwitchCase="'sale'" >
+      <img  src="assets/image/undraw_process_e90d.png" alt="" />
+      <ion-card-header>
+        
+        <ion-card-title>Sale Process</ion-card-title>
+        <ion-card-subtitle><strong>Marketing team</strong></ion-card-subtitle>
+      </ion-card-header>
+  
+    </ion-card>  
+    <ion-card *ngSwitchCase="'sale'"  >
+      <ion-card-header>
+        <ion-card-subtitle><strong>Sale Customer Information</strong></ion-card-subtitle>
+       
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Names <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="salesprocess.name"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">Phone Number <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text"[(ngModel)]="salesprocess.phone_number"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">ID Number<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="salesprocess.id_number"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">Email Address <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="salesprocess.email"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+        <ion-label>Signed Contract ?</ion-label>
+          <ion-select  required type="text" placeholder="Contract" [(ngModel)]="salesprocess.contract" >
+            <ion-select-option value="Yes" > Yes</ion-select-option>
+                    <ion-select-option  value="No"> No</ion-select-option>  
+              </ion-select>
+         </ion-item>
+
+        <ion-button style="font-size: 1.2rem;margin-top:10% ;" (click)="saveSalesProcessReport()" color="medium" expand="full" shape="round">Send</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'tech'" >
+      <img  src="assets/image/undraw_Ordinary_day_3gk3.png" alt="" />
+      <ion-card-header>
+        
+        <ion-card-title>Site Process</ion-card-title>
+        <ion-card-subtitle><strong>Technican teams</strong></ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>  
+    <ion-card *ngSwitchCase="'tech'"  >
+      <ion-card-header>
+        <ion-card-subtitle><strong>Site Information</strong></ion-card-subtitle>
+       
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Team</ion-label>
+            <ion-select  required type="text" placeholder="Teams" [(ngModel)]="siteProcess.Team" >
+              <ion-select-option value="TeamOne" > Team One</ion-select-option>
+                      <ion-select-option  value="TeamTwo"> Team Two</ion-select-option>
+                      <ion-select-option  value="TeamThree"> Team Three </ion-select-option>  
+                </ion-select>
+           </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Number of Site per Day <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required  placeholder="Number of site done in one day" type="text" [(ngModel)]="siteProcess.siteNum"></ion-input>
+        </ion-item>
+  
+       
+  
+  
+       
+  
+        <ion-button style="font-size: 1.2rem;margin-top:10% ;"
+        (click)="saveSiteProcessReport()"
+         color="medium" expand="full" shape="round">Send</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  
+</ion-content>

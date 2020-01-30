@@ -1,0 +1,52 @@
+<ion-header >
+  <ion-toolbar color="danger" >
+      <ion-buttons slot="start" (click)="routerToProfile()">
+          <ion-button>
+            <ion-icon slot="icon-only" color="light" name="ios-contact"></ion-icon>
+            <ion-label >KI  Moroke</ion-label>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end"  (click)="routerToSettings()" >
+            <ion-button>
+              <ion-icon slot="icon-only" color="light" name="more"></ion-icon>
+             
+            </ion-button>
+          </ion-buttons>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+<div >
+
+</div>
+<ion-card>
+<ion-img src="assets/image/undraw_team_spirit_hrr4.png"></ion-img>
+<ion-card-content>
+  <ion-card-subtitle style="font-size: 1.2rem;">
+   <strong>Team management</strong> 
+  </ion-card-subtitle>
+</ion-card-content>
+</ion-card>
+<ion-card  (click)="routerToTeamMembers()" >
+<ion-item >
+    <ion-fab-button  color="danger"><ion-icon name="ios-information-circle" style="zoom: 1;"></ion-icon></ion-fab-button>
+  
+    <ion-card-header>
+        <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Teams Information</ion-card-subtitle>
+        <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize">See more</ion-card-subtitle>
+    </ion-card-header>
+</ion-item>
+</ion-card>
+<ion-card  (click)="routerToReport()" >
+<ion-item >
+    <ion-fab-button  color="danger"><ion-icon name="paper" style="zoom: 1;"></ion-icon></ion-fab-button>
+  
+    <ion-card-header>
+        <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Report</ion-card-subtitle>
+        <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize"> performance or behaviour </ion-card-subtitle>
+    </ion-card-header>
+</ion-item>
+</ion-card>
+
+</ion-content>

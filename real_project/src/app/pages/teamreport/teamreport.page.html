@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Team member Report</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToTeams()">
+        <ion-icon slot="icon-only" color="medium" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+<ion-list lines="full">
+
+  <ion-item>
+      
+    <ion-label>Team one members</ion-label>
+    <ion-select multiple="true" required type="text" placeholder="Team Members" [(ngModel)]="teamreport.teammember" >
+        <ion-select-option value="Moroke Matchoma" > Moroke Matchoma</ion-select-option>
+                <ion-select-option  value="Joet Khomole">Joet Khomole</ion-select-option>
+                <ion-select-option value="Marvin Mudau" >Marvin Mudau</ion-select-option>
+                <ion-select-option value="Sibouiso Kholf">Sibouiso Kholf</ion-select-option>
+                <ion-select-option value="Frans Masango">Frans Masango</ion-select-option>
+                <ion-select-option value="Collen Mokgomola" >Collen Mokgomola</ion-select-option>
+                <ion-select-option value="Dipuo Movoasehla">Dipuo Movoasehla</ion-select-option>
+                
+      </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label   position="floating">Problem Topic</ion-label>
+    <ion-input  required type="text" placeholder="Topic" [(ngModel)]="teamreport.topic"></ion-input >
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Message</ion-label>
+    <ion-input  required type="text" placeholder="Message" [(ngModel)]="teamreport.message"></ion-input >
+  </ion-item>
+
+</ion-list>
+
+
+
+
+
+
+
+<ion-button  style="font-size: 1.2rem;" (click)="saveReport()" color="danger" expand="full" shape="round">Send</ion-button>
+</ion-content>

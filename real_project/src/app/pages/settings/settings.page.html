@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Settings</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="backToDashboard()">
+        <ion-icon slot="icon-only" color="medium" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-card style="height: 13%;"
+href="https://docs.google.com/forms/d/e/1FAIpQLSeul481wlUqSPg6uxjg_cFNvHaR64L6oIXc9AqxdwOnsd-quA/viewform" >
+  <ion-item >
+      <ion-fab-button  color="danger"><ion-icon name="ios-car" style="zoom: 1;"></ion-icon></ion-fab-button>
+    
+      <ion-card-header>
+          <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Vehicle Inspection</ion-card-subtitle>
+          <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize">See more</ion-card-subtitle>
+      </ion-card-header>
+  </ion-item>
+</ion-card>
+<ion-card style="height: 13%;"
+href="https://docs.google.com/forms/d/e/1FAIpQLSdj7iiu7HPUtOy8VkLMBcX9piwq9MP9QWA_NoEvJD1H93zU9w/viewform">
+  <ion-item >
+      <ion-fab-button  color="danger"><ion-icon name="ios-home" style="zoom: 1;"></ion-icon></ion-fab-button>
+    
+      <ion-card-header>
+          <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Site Inspection</ion-card-subtitle>
+          <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize"> See more </ion-card-subtitle>
+      </ion-card-header>
+  </ion-item>
+</ion-card>
+
+<ion-card style="height: 13%;">
+<ion-item >
+    <ion-fab-button  color="danger"><ion-icon name="ios-paper" style="zoom: 1;"></ion-icon></ion-fab-button>
+  
+    <ion-card-header>
+        <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Leave Form</ion-card-subtitle>
+        <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize">Apply for leave</ion-card-subtitle>
+    </ion-card-header>
+</ion-item>
+</ion-card>
+<ion-card style="height: 13%;">
+<ion-item >
+    <ion-fab-button  color="danger"><ion-icon name="ios-medkit" style="zoom: 1;"></ion-icon></ion-fab-button>
+  
+    <ion-card-header>
+        <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Health & Safety</ion-card-subtitle>
+        <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize">Form</ion-card-subtitle>
+    </ion-card-header>
+</ion-item>
+</ion-card>
+<ion-card style="height: 13%;" (click)="signOut()">
+<ion-item >
+    <ion-fab-button  color="danger"><ion-icon name="ios-log-out" style="zoom: 1;"></ion-icon></ion-fab-button>
+  
+    <ion-card-header>
+        <ion-card-subtitle style="margin-top: 2px;font-size: 1.15rem;" class="ion-text-capitalize">Log-out</ion-card-subtitle>
+        <ion-card-subtitle style="font-size:0.8rem " class="ion-text-capitalize">:)</ion-card-subtitle>
+    </ion-card-header>
+</ion-item>
+</ion-card>
+</ion-content>
